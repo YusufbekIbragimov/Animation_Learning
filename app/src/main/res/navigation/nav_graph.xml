@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment_A">
+
+    <fragment
+        android:id="@+id/fragment_A"
+        tools:layout="@layout/fragment_a"
+        android:name="uz.yusufbek_ibragimov.animation_learning.fragments.Fragment_A"
+        android:label="Fragment_A" >
+        <action
+            android:id="@+id/action_fragment_A_to_fragment_B"
+            app:destination="@id/fragment_B"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_B"
+        tools:layout="@layout/fragment_b"
+        android:name="uz.yusufbek_ibragimov.animation_learning.fragments.Fragment_B"
+        android:label="Fragment_B" >
+        <action
+            android:id="@+id/action_fragment_B_to_fragment_C"
+            app:destination="@id/fragment_C"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_C"
+        tools:layout="@layout/fragment_c"
+        android:name="uz.yusufbek_ibragimov.animation_learning.fragments.Fragment_C"
+        android:label="Fragment_C" >
+        <action
+            android:id="@+id/action_fragment_C_to_fragment_D"
+            app:destination="@id/fragment_D" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_D"
+        tools:layout="@layout/fragment_d"
+        android:name="uz.yusufbek_ibragimov.animation_learning.fragments.Fragment_D"
+        android:label="Fragment_D" >
+        <action
+            android:id="@+id/action_fragment_D_to_fragment_E"
+            app:destination="@id/fragment_E" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_E"
+        tools:layout="@layout/fragment_e"
+        android:name="uz.yusufbek_ibragimov.animation_learning.fragments.Fragment_E"
+        android:label="Fragment_E" >
+        <argument
+            android:name="ImageResurs"
+            app:argType="integer" />
+        <argument
+            android:name="Title"
+            app:argType="string" />
+        <argument
+            android:name="about"
+            app:argType="string" />
+    </fragment>
+</navigation>

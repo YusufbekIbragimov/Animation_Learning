@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0091EA"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Keyingi Fragmentga o'tish uchun AnimatedMaker tugmasini bosib turing"
+        android:layout_margin="24dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:gravity="center"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:paddingLeft="20dp"
+        android:drawableLeft="@drawable/chapga_icon"
+        android:drawableRight="@drawable/ic_baseline_refresh_24"
+        android:paddingRight="20dp"
+        android:transitionName="button_transition"
+        android:text="              Animated View              "
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/animated_btn"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/animated_btn"
+        android:text="Viewni o'ng tomonga aylantirish uchun o'ng tomoniga chap tomonga aylantirish uchun chap tomoniga bosing"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:gravity="center"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9"
+        android:text="animated maker"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/animated_maker_btn"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
